@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 10px;
+	font-family: sans-serif;
+	min-height: 100vh;
+}
+
+.videos {
+	list-style: inside square;
+	font-size: 14px;
+	background: white;
+	width: 100%;
+	padding: 0;
+}
+
+.videos li {
+	border-bottom: 1px solid #efefef;
+	padding: 10px;
+}
+
+.videos li:after {
+	content: attr(data-time);
+	float: right;
+}
+
+.videos li:last-child {
+	border-bottom: 0;
+}
+
+a {
+	color: #ffc600;
+	text-decoration: none;
+}
